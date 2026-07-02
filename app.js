@@ -62,3 +62,41 @@ console.log(fullName.length);
 
 
 
+
+// Question 4: if-else Conditional Logic
+// Write an if-else statement that checks a temperature variable. 
+// If temperature is above 30, console.log "Hot day". 
+// If between 20 and 30 (inclusive), console.log "Pleasant day".
+// Otherwise, console.log "Cold day". Test with temperature = 25.
+
+let temperature = 25;
+if (temperature > 30) {
+    console.log("Hot day");
+
+} else if (temperature >= 20 && temperature <= 30) {
+    console.log("Pleasant day");
+} else {
+    console.log("Cold day");
+
+}
+
+
+
+
+// Question 5: Comparison Operators
+// Create three comparison operations:
+
+// Check if 15 is strictly equal to "15"
+// Check if 20 is greater than 15 AND less than 25
+// Check if 10 is not equal to 10 OR 5 is greater than 3
+
+console.log(15 === "15");
+console.log(20 > 15 && 20 < 25);
+console.log(10 !== 10 || 5 > 3);
+
+
+
+
+
+
+
