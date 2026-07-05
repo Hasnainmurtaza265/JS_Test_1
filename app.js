@@ -98,5 +98,137 @@ console.log(10 !== 10 || 5 > 3);
 
 
 
+// Question 6: Array Manipulation - Basics
+// Create an array colors with values ["red", "green", "blue"]. Then:
+// Add "yellow" to the end
+// Remove the first element
+// Insert "purple" at index 1
+// Console.log the final array and its length 
+
+let colors = ["red", "green", "blue"];
+colors.push("yellow");
+colors.shift();
+colors.splice(1, 0, "purple");
+console.log(colors, colors.length);
+
+
+
+
+
+
+
+
+
+
+// Question 7: Array Manipulation - splice()
+// Start with array fruits = ["apple", "banana", "cherry", "date", "elderberry"]. Use splice() to:
+// Remove "cherry"
+// Replace "date" with "dragonfruit"
+// Extract the middle 3 elements into a new array
+
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+fruits.splice(2, 1);
+fruits.splice(2, 1, "dragonfruit");
+console.log(fruits);
+
+
+
+
+
+
+
+// Question 8: for Loop - Number Sequence
+// Write a for loop that prints numbers from 1 to 10, 
+// but skips number 5 using continue, and stops at 8 using break.
+// Also calculate the sum of all printed numbers.
+let sum = 0;
+for (i = 1; i <= 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+
+    if (i >= 8) {
+        break;
+    }
+    console.log(i);
+    sum += i;
+
+
+}
+
+console.log(sum);
+
+
+
+
+
+
+// Question 9: Nested for Loop - Pattern
+// Write nested for loops to create this pattern:
+
+// *
+// **
+// ***
+// ****
+// *****
+
+
+for (i = 1; i <= 5; i++) {
+    let pattern = "";
+
+    for (j = 1; j <= i; j++) {
+        pattern += "*";
+    }
+    console.log(pattern);
+
+}
+
+
+
+
+
+
+// Question 10: String Methods - Search and Extract
+// Given text = "The quick brown fox jumps over the lazy dog":
+// Find the position of "fox"
+// Extract "brown fox" using substring/slice
+// Check if the text contains "dog"
+// Get the character at position 10
+
+let text = "The quick brown fox jumps over the lazy dog";
+console.log(text.indexOf("fox"));
+
+let extract = text.substring(10, 19);
+console.log(extract);
+
+let search = text.includes("dog");
+console.log(search);
+
+let index = text.charAt(10);
+console.log(index);
+
+
+
+
+
+
+
+
+
+// Question 11: String Replacement
+// Given sentence = "I love JavaScript and JavaScript is awesome":
+// Replace the first "JavaScript" with "coding"
+// Replace ALL "JavaScript" with "JS"
+// Replace "awesome" with uppercase "AWESOME"
+
+let sentence = "I love JavaScript and JavaScript is awesome";
+let code = sentence.replace("JavaScript", "coding");
+console.log(code);
+
+let js = sentence.replaceAll("JavaScript", "JS");
+console.log(js);
+
+let awesome = sentence.replace("awesome", "AWESOME");
+console.log(awesome);
 
 
