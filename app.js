@@ -232,3 +232,44 @@ let awesome = sentence.replace("awesome", "AWESOME");
 console.log(awesome);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Question 12: Number Rounding and Formatting
+// Given num = 123.456789:
+
+// Round to 2 decimal places
+// Round to nearest integer
+// Get the floor value
+// Get the ceiling value
+// Format to show exactly 4 decimal places
+
+let num = 123.456789;
+let round_2 = num.toFixed(2);
+console.log(round_2);
+
+
+let nearest = Math.round(num);
+console.log(nearest);
+
+
+let floor = Math.floor(num);
+console.log(floor);
+
+let ceil = Math.ceil(num);
+console.log(ceil);
+
+
+
