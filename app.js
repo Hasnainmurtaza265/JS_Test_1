@@ -249,7 +249,6 @@ console.log(awesome);
 
 // Question 12: Number Rounding and Formatting
 // Given num = 123.456789:
-
 // Round to 2 decimal places
 // Round to nearest integer
 // Get the floor value
@@ -270,6 +269,123 @@ console.log(floor);
 
 let ceil = Math.ceil(num);
 console.log(ceil);
+
+let format = num.toFixed(4);
+console.log(format);
+
+
+
+// Question 13: Random Number Generation
+// Generate:
+// A random integer between 1 and 100 (inclusive)
+// A random decimal between 0 and 1 with 3 decimal places
+// A random number between 50 and 75 (inclusive)
+
+
+let random = Math.floor(Math.random() * 100 + 1);
+console.log(random);
+
+
+let decimal = Math.random().toFixed(3)
+console.log(decimal);
+
+let number = Math.floor(Math.random() * (75 - 50 + 1)) + 50;
+console.log(number);
+
+
+
+
+
+
+
+
+// Question 14: Type Conversion
+// Perform these conversions:
+// Convert string "123" to number
+// Convert string "45.67" to decimal (float)
+// Convert number 789 to string
+// Check the type of "true" after converting to boolean
+
+
+let num_1 = "123";
+num_1 = +num_1;
+console.log(num_1);
+
+let decimal_float = "45.67";
+decimal_float = parseFloat(decimal_float);
+console.log(decimal_float);
+
+let num_string = 789;
+num_string = num_string.toString();
+console.log(num_string);
+
+let value_3 = "true";
+value_3 = Boolean(value_3);
+console.log(typeof (value_3));
+
+
+
+
+
+
+// Question 15: Date and Time Operations
+// Create a Date object for the current time and:
+
+// Extract the year, month (0-11), and day
+// Get the hours in 24-hour format
+// Format it as "YYYY-MM-DD"
+// Create a specific date for December 25, 2024
+
+let today = new Date();
+let crnt_year = today.getFullYear();
+console.log(crnt_year);
+let crnt_month = today.getMonth();
+console.log(crnt_month);
+let crnt_date = today.getDate();
+console.log(crnt_date);
+
+
+let crnt_hours = today.getHours();
+console.log(crnt_hours);
+
+
+let year = today.getFullYear();
+let month = today.getMonth() + 1;
+let date = today.getDate();
+let final_date = year + "-" + month + "-" + date;
+console.log(final_date);
+
+
+let christmas = new Date(2024, 11, 25);
+console.log(christmas);
+
+
+
+
+
+
+
+
+// Question 16: Function - Basic Calculator
+// Write a function calculate that takes two numbers and 
+// an operator (+, -, *, /) as parameters and returns the result. 
+// Handle division by zero by returning "Error: Division by zero".
+
+
+let calculate=(num_1,num_2,operator)=>{
+if(operator==="+"){
+return num_1+num_2;
+}
+
+
+
+
+}
+
+
+
+
+
 
 
 
